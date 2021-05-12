@@ -2,7 +2,8 @@
 
 function removeVowels(str) {
     var strWithoutVowels =  [];
-            str = str.split('');
+            lower = str.toLowerCase()
+            str = lower.split('');
             var vowels = ['a', 'e', 'i', 'o', 'u'];
             for (var i = 0; i < str.length; i++) {
                 if (vowels.indexOf(str[i]) < 0) {
@@ -60,9 +61,34 @@ String.prototype.babyTalk = function () {
 
 console.log('3 - Baby Talk: ' + babyTalk("This library was a mistake."))
 
+function oldEnglish(str) {
+  const lower = str.toLowerCase()
+  const you = "you"
+  const thou = "thou"
+  const result = lower.replaceAll(you, thou)
+  const your = "your"
+  const thy = "thy"
+  const result2 = result.replaceAll(your, thy)
+  const are = "are"
+  const art = "art"
+  const result3 = result2.replaceAll(are, art)
+  const shall = "shall"
+  const shalt = "shalt"
+  const result4 = result3.replaceAll(shall, shalt)
+  return result4.toLowerCase()
+
+}
+
+String.prototype.oldEnglish = function () {
+  return oldEnglish(this);
+};
+
+console.log("3 - Old English: " + oldEnglish("You shall not pass!"));
+
 
 module.exports = {
   removeVowels,
   mirror,
   babyTalk,
+  oldEnglish
 }
