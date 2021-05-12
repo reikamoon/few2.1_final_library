@@ -1,6 +1,6 @@
 {
   "name": "reikamoon-string-library-aa",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "# Remove Vowels from Strings :a::o2: <li>Removes all vowels from strings.</li>",
   "main": "src/index.js",
   "directories": {
