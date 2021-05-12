@@ -1,4 +1,5 @@
 # reikamoon's Library 
+<b>Badges</b>
 [![Build Status](https://travis-ci.com/reikamoon/few2.1_final_library.svg?branch=main)](https://travis-ci.com/reikamoon/few2.1_final_library)
 [![Coverage Status](https://coveralls.io/repos/github/reikamoon/few2.1_final_library/badge.svg?branch=main)](https://coveralls.io/github/reikamoon/few2.1_final_library?branch=main)
 
